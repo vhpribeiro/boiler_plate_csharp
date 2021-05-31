@@ -1,4 +1,6 @@
-﻿namespace Solucao_Base.Dominio
+﻿using System.Collections.Generic;
+
+namespace Solucao_Base.Dominio
 {
     public abstract class Entidade
     {

@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using Solucao_Base.Dominio.Excecoes;
 using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
