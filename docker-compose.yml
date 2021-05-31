@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  solucao_base.apresentacao:
-    image: ${DOCKER_REGISTRY-}solucaobaseapresentacao
-    build:
-      context: .
-      dockerfile: Solucao_Base.Apresentacao\Dockerfile

@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Solucao_Base.Dominio;
 using Solucao_Base.Infra._Helpers;
+using Solucao_Base.Infra.Repositorios;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 

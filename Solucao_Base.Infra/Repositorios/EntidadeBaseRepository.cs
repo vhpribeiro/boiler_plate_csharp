@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Solucao_Base.Dominio;
+using Solucao_Base.Infra._Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Solucao_Base.Infra._Helpers
+namespace Solucao_Base.Infra.Repositorios
 {
     public class EntidadeBaseRepository<T> : IEntidadeBaseRepository<T> where T : Entidade
     {

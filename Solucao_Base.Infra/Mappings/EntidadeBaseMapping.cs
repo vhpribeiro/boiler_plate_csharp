@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Solucao_Base.Dominio;
 
-namespace Solucao_Base.Infra._Helpers
+namespace Solucao_Base.Infra.Mappings
 {
     public abstract class EntidadeBaseMapping<T> where T : Entidade
     {
