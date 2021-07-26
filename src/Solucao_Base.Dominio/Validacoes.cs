@@ -3,16 +3,16 @@ using System.Collections.Generic;
 
 namespace Solucao_Base.Dominio
 {
-    public class Validacoes<T> where T : class
+    public class Validacoes
     {
         private readonly List<string> Erros = new();
 
-        public static Validacoes<T> Novo()
+        public static Validacoes Novo()
         {
-            return new Validacoes<T>();
+            return new Validacoes();
         }
 
-        public Validacoes<T> Quando(bool condicao, string mensagemDeErro)
+        public Validacoes Quando(bool condicao, string mensagemDeErro)
         {
             if (condicao)
                 Erros.Add(mensagemDeErro);
@@ -20,7 +20,7 @@ namespace Solucao_Base.Dominio
             return this;
         }
 
-        public Validacoes<T> Obrigando(string stringParaSerValidada, string mensagemDeErro)
+        public Validacoes Obrigando(string stringParaSerValidada, string mensagemDeErro)
         {
             if (string.IsNullOrWhiteSpace(stringParaSerValidada))
                 Erros.Add(mensagemDeErro);
@@ -28,7 +28,7 @@ namespace Solucao_Base.Dominio
             return this;
         }
 
-        public Validacoes<T> Obrigando(int numeroQueDeveSerPositivo, string mensagemDeErro)
+        public Validacoes Obrigando(int numeroQueDeveSerPositivo, string mensagemDeErro)
         {
             if (numeroQueDeveSerPositivo < 0)
                 Erros.Add(mensagemDeErro);
@@ -36,7 +36,7 @@ namespace Solucao_Base.Dominio
             return this;
         }
 
-        public Validacoes<T> Obrigando(double numeroQueDeveSerPositivo, string mensagemDeErro)
+        public Validacoes Obrigando(double numeroQueDeveSerPositivo, string mensagemDeErro)
         {
             if (numeroQueDeveSerPositivo < 0)
                 Erros.Add(mensagemDeErro);
@@ -44,7 +44,7 @@ namespace Solucao_Base.Dominio
             return this;
         }
 
-        public Validacoes<T> Obrigando(Guid guidParaSerValidado, string mensagemDeErro)
+        public Validacoes Obrigando(Guid guidParaSerValidado, string mensagemDeErro)
         {
             if (Guid.Empty == guidParaSerValidado)
                 Erros.Add(mensagemDeErro);

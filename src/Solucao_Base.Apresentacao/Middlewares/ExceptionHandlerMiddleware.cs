@@ -46,17 +46,17 @@ namespace Solucao_Base.Apresentacao.Middlewares
 
         private static IList<string> ExtrairErros(string mensagemOriginal)
         {
-            string[] errors = default;
+            string[] erros = default;
 
-            if (mensagemOriginal.Contains("Errors:"))
+            if (mensagemOriginal.Contains("Erros:"))
             {
-                var content = mensagemOriginal.Split("Errors:");
-                errors = content[1].Trim().Split('|');
+                var content = mensagemOriginal.Split("Erros:");
+                erros = content[1].Trim().Split('|');
 
-                return errors;
+                return erros;
             }
             else
-                return errors;
+                return erros;
         }
     }
 }
