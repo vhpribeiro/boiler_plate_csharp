@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
-    <Folder Include="Mapeadores\" />
+    <ProjectReference Include="..\Solucao_Base.Dominio\Solucao_Base.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,7 @@ namespace Solucao_Base.Dominio.Testes.Usuarios
 
         public UsuarioTeste()
         {
-            _idadePadrao = 25;
+            _idadePadrao = 98;
             _nomePadrao = "Vitor Hugo Pereira Ribeiro";
             _emailPadrao = "vitor.hp.ribeiro@gmail.com.br";
         }
