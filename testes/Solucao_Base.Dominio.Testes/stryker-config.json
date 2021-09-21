@@ -1,0 +1,15 @@
+﻿{
+  "stryker-config": {
+    "reporters": [
+      "progress",
+      "html"
+    ],
+    "mutate": [
+      "!Validacoes.cs"
+    ],
+    "excluded-mutations": [
+      "string",
+      "Logical operators"
+    ]
+  }
+}
